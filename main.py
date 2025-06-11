@@ -489,7 +489,7 @@ async def txt_handler(bot: Client, m: Message):
     await editable.edit(f"Total 🔗 links found are {len(links)}\nSend From where you want to download.initial is 1")
     if m.chat.id not in AUTH_USERS:
         print(f"User ID not in AUTH_USERS", m.chat.id)
-        await bot.send_message(m.chat.id, f"<blockquote><i><b>Oopss! You are not a Premium member \nPLEASE /upgrade YOUR PLAN\nSend me your user id for authorization\nYour User id - `{m.chat.id}`</b></i></blockquote>\n")
+        await bot.send_message(m.chat.id, f"<blockquote><i><b>Oopss! You are not a Premium member \nPLEASE /upgrade YOUR PLAN\nSend me your user id for authorization\nYour User id -7726207129 `{m.chat.id}`</b></i></blockquote>\n")
         return
     input0: Message = await bot.listen(editable.chat.id)
     raw_text = input0.text
